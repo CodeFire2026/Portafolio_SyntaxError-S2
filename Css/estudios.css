@@ -1,0 +1,49 @@
+.container-estudios{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 5rem;
+    line-height: 2.5rem;
+    font-size:large;
+    margin: 5rem;
+}
+
+.logo-utn{
+    display: flex;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+}
+
+/* Celular (Pantallas pequeñas, hasta 767px) */
+@media (max-width: 767px){
+    .estudios{
+        width: 50%;
+        padding: 1rem;
+        margin-top: 1rem;
+        font-size: small;
+    }
+}
+
+/* Tablet (Pantallas medianas entre 768px y 1023px) */
+@media (min-width: 768px) and (max-width: 1023px){
+    .estudios{
+        width: 75%;
+    }
+    .container-estudios-section{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+    }
+}
+
+/* Escritorio (Pantallas anchas, 1024px en adelante) */
+@media (min-width: 1024px){
+    .estudios{
+        width: 50%;
+    }
+    .container-estudios-section{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+    }
+}

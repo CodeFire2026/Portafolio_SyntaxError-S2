@@ -1,0 +1,99 @@
+/* Definimos variables de color en css*/
+:root{
+    --body-bg-color: rgb(59, 59, 129);
+    --text-color: white;
+    --colorh1-colo: rgb(215, 211, 211);
+    --fondo-proyectos: rgb(92, 43, 120);
+}
+
+
+/*Aplicando variable creada en el root al body de nuestra web*/
+body{
+    display: flex;
+    flex-direction: column;
+    background: var(--body-bg-color);
+    color: var(--text-color);
+    transition: background-color 0.5s ease;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1,h2{
+    color: var(--colorh1-colo);
+}
+
+.navigation{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    justify-content: right;
+    margin: 0 3rem;
+    
+}
+
+.navigation li{
+    font-size: 1.5rem;
+    width: 170px;
+    text-align: center;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    background-color: #f0eaea1a;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #ebe6e6;
+}
+
+.titulo{
+    font-size: 4rem;
+    color: rgb(237, 234, 234);
+    text-align: center ;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Celular (Pantallas pequeñas, hasta 767px) */
+@media (max-width: 767px){
+    .titulo{
+        justify-content: center;
+    }
+    .navigation{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
+/* Tablet (Pantallas medianas entre 768px y 1023px) */
+@media (min-width: 768px) and (max-width: 1023px){
+    .titulo{
+        justify-content: center;
+    }
+    .navigation{
+        gap: 2rem;
+        justify-content: center;
+    }
+}
+
+/* Escritorio (Pantallas anchas, 1024px en adelante) */
+@media (min-width: 1024px){
+    .titulo{
+        justify-content: flex-start;
+    }
+    .navigation{
+        gap: 3rem;
+        justify-content: flex-end;
+        margin: 0 3rem;
+    }
+}
