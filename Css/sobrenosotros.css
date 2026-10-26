@@ -1,0 +1,42 @@
+.sobrenosotros{
+    display: flex;
+    justify-content: center; /* Esto centra el elemento */
+}
+
+.container-sobrenosotros{
+    display: flex;
+    width: 45%; /* ancho del contenedor */
+    padding: 2rem;
+    margin-top: 5rem; /* margen a lo alto */
+    line-height: 2.5rem; /* espaciado entre los parrafos del texto */
+    font-size: 15px; /* tamaño de la fuente */
+    color: azure;
+    gap: 5rem;
+    align-items: center;
+}
+
+/* Celular (Pantallas pequeñas, hasta 767px) */
+@media (max-width: 767px){
+    .container-sobrenosotros{
+        width: 100%;
+        margin-top: 1rem; /* margen a lo alto */
+        padding: 1rem; 
+        line-height: 2.5rem;/* espaciado entre los parrafos del texto */
+        font-size: small; /* tamaño de la fuente */
+        flex-direction: column;
+    }
+}
+
+/* Tablet (Pantallas medianas entre 768px y 1023px) */
+@media (min-width: 768px) and (max-width: 1023px){
+    .container-sobrenosotros{
+        width: 75%;
+    }
+}
+
+/* Escritorio (Pantallas anchas, 1024px en adelante) */
+@media (min-width: 1024px){
+    .container-sobrenosotros{
+        width: 50%;
+    }
+}
