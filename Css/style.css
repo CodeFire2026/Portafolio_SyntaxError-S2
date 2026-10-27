@@ -1,9 +1,9 @@
 /* Definimos variables de color en css*/
-:root{
-    --body-bg-color: rgb(59, 59, 129);
+:root {
+    --body-bg-color: #444B35;
     --text-color: white;
-    --colorh1-colo: rgb(215, 211, 211);
-    --fondo-proyectos: rgb(92, 43, 120);
+    --colorh1-colo: #E8E5DC;
+    --fondo-proyectos: #30312D;
 }
 
 

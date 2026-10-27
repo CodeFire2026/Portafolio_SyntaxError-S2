@@ -1,10 +1,11 @@
 .container-estudios{
-    width: 100%;
+    width: 90%;
     padding: 2rem;
     margin-top: 5rem;
     line-height: 2.5rem;
     font-size:large;
-    margin: 5rem;
+    margin: 5rem auto;
+    box-sizing: border-box ;
 }
 
 .logo-utn{
@@ -40,10 +41,11 @@
     .estudios{
         width: 50%;
     }
-    .container-estudios-section{
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        width: 100%;
-    }
+    .container-estudios-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
 }
