@@ -1,62 +1,103 @@
-.proyectos{
-    width: 80;
+
+/* Sección general de proyectos */
+.proyectos {
+    width: 80%;
     padding: 1rem;
-    margin: 5rem;
-    background: var(--fondo-proyecto);
+    margin: 5rem auto;
+    background: var(--fondo-proyectos);
+    box-sizing: border-box;
 }
-/*Contenedor general que engloba a los proyectos */
-.galeria-proyectos{
+
+/* Contenedor general de los proyectos */
+.galeria-proyectos {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-
 }
-/*Como es el contenedor del proyecto en general*/
-.proyecto{
-    background-color: rgb(53, 52, 52); /* Color de fondo de la tarjeta*/
+
+/* Tarjetas de cada proyecto */
+.proyecto {
+    background-color: rgb(53, 52, 52);
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
-    width: calc(33% - 40px); /*Ajusta el ancho segun la cantidad de proyectos a mostrar en una fila */
+    width: calc(33% - 40px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    display: flex; 
-    flex-direction: column; 
+
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
-/*Imagen del proyecto*/
-.proyecto img{
+
+/* Imágenes de los proyectos */
+.proyecto img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
-/*Titulo del proyecto*/
-.proyecto h3{
+
+/* Títulos de los proyectos */
+.proyecto h3 {
     margin-top: 10px;
     font-size: 1.2rem;
 }
-/*Descripcion del proyecto*/
-.proyecto p{
+
+/* Descripciones */
+.proyecto p {
     margin: 10px 0;
 }
 
+/* Recuadro: De PSeInt a Java */
+.proceso-proyecto {
+    background-color: #333333;
+    border: 1px solid #A88C92;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    box-sizing: border-box;
+    text-align: center;
+}
 
-/*Media Queries para hacerlo responsivo Celular*/
-@media (max-width: 767px){
-    .proyecto{
-        width: calc(100% - 40px);
+/* Título del recuadro */
+.proceso-proyecto h3 {
+    color: #F1D5DA;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Texto del recuadro */
+.proceso-proyecto p {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+/* Celulares */
+@media (max-width: 767px) {
+    .proyectos {
+        width: 95%;
+        margin: 2rem auto;
+    }
+
+    .proyecto {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
-/*Media Queries para hacerlo responsivo Tablet*/
-@media (min-width: 768px) and (max-width: 1023px){
-    .proyecto{
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .proyecto {
         width: calc(50% - 40px);
     }
 }
-/*Media Queries para hacerlo responsivo Desktop*/
-@media (min-width: 1024px){
-    .proyecto{
+
+/* Escritorio */
+@media (min-width: 1024px) {
+    .proyecto {
         width: calc(33% - 40px);
     }
 }
