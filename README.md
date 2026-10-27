@@ -23,6 +23,6 @@ Para la organización del equipo utilizaremos la metodología **Scrum**, lo que 
 ---
 ## `Tecnologias Utilizadas`
   
-  <img src="https://skillicons.dev/icons?i=html,js,c,git,github,perline=15" />
+  <img src="https://skillicons.dev/icons?i=html,js,css,git,github,perline=15" />
 </p>
 
