@@ -1,0 +1,121 @@
+.nosotros{
+    /* Variables propias de esta sección */
+    --nosotros-superficie: #30312D;
+    --nosotros-borde: rgba(255, 255, 255, 0.12);
+    --nosotros-sombra: rgba(0, 0, 0, 0.35);
+    --nosotros-acento: #8FB573;
+    --nosotros-texto: #E8E5DC;
+    --nosotros-texto-suave: #d8d8d0;
+    --nosotros-radio: 1rem;
+
+    width: 100%;
+    padding: 1rem;
+    margin: 5rem auto;
+    box-sizing: border-box;
+}
+
+.nosotros h2{
+    text-align: 5rem auto;
+    padding: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Grilla de integrantes */
+.galeria-nosotros{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+}
+
+/* Caja cuadrada de cada integrante */
+.integrante{
+    aspect-ratio: 1 / 1.1; /* mantiene la caja rectangular */
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    background-color: var(--nosotros-superficie);
+    border: 1px solid var(--nosotros-borde);
+    border-radius: var(--nosotros-radio);
+    box-shadow: 0 2px 8px var(--nosotros-sombra);
+    color: var(--nosotros-texto-suave);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.integrante:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px var(--nosotros-sombra);
+}
+
+.integrante h3{
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--nosotros-texto);
+}
+
+.integrante p{
+    flex: 1;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    overflow-y: auto;
+}
+
+.integrante a{
+    align-self: flex-start;
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    color: var(--nosotros-acento);
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.integrante a svg{
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+.integrante a:hover{
+    color: var(--nosotros-texto);
+    transform: scale(1.15);
+}
+
+/* Celular (Pantallas pequeñas, hasta 767px) */
+@media (max-width: 767px){
+    .nosotros{
+        padding: 0.5rem;
+        margin: 2rem auto;
+    }
+    .galeria-nosotros{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.75rem;
+    }
+    .integrante{
+        padding: 0.9rem;
+    }
+}
+
+/* Tablet (768px a 1023px): 5 arriba y 5 abajo */
+@media (min-width: 768px) and (max-width: 1023px){
+    .galeria-nosotros{
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+    }
+    .integrante{
+        padding: 0.9rem;
+    }
+}
+
+/* Escritorio (1024px en adelante): 5 arriba y 5 abajo */
+@media (min-width: 1024px){
+    .galeria-nosotros{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
