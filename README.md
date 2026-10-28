@@ -13,11 +13,11 @@ Para la organización del equipo utilizaremos la metodología **Scrum**, lo que 
 
 ## `Integrantes:`
 ```bash
-> Gustavo Alaniz            > Rodrigo Sanchez
-> Matias Lopez              > Bruno Sosa
-> Luciano Morcillo          > Juan Sosa
-> Emanuel Nuñez             > Michael Súarez
-> Jesus Perez               > Cristian Vidal
+> Bruno Sosa                > Juan Sosa
+> Cristian Vidal            > Luciano Morcillo
+> Emanuel Nuñez             > Matias Lopez
+> Gustavo Alaniz            > Michael Súarez
+> Jesus Perez               > Rodrigo Sanchez         
 ```
 
 ---

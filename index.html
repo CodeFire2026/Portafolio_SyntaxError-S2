@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./Css/experiencia.css">
     <link rel="stylesheet" href="./Css/estudios.css">
     <link rel="stylesheet" href="./Css/proyecto.css">
+    <link rel="stylesheet" href="./Css/contacto.css">
+    <link rel="stylesheet" href="./Css/nosotros.css">
 </head>
 <body>
     <header>
@@ -25,6 +27,8 @@
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#estudios">Estudios</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
             </ul>
         </nav>   
     </header>
@@ -36,33 +40,40 @@
                 </h2>
             </article>
         </section>
+
         <section id="experiencia" class="experiencia">
-            <article class="container-experiencia">
+            <div class="container-experiencia">
                 <h2>Experiencia Práctica</h2>
+                <div class="galeria-proyectos">
+                    <div class="proyectos">
                     <h3>Desarrollo de proyectos </h3>
                 <p>
                     Durante nuestra formación en la Tecnicatura en Programación
                     de la UTN San Rafael, realizamos ejercicios prácticos
-                    utilizando diferentes lenguajes y herramientas de programación.
-                </p>
-
-                <p>
+                    utilizando diferentes lenguajes y herramientas de programación.               
                     Como proyecto grupal, desarrollamos un proyecto académico compuesto
                     por tres minijuegos: Piedra, Papel o Tijera,
                     Ta-Te-Ti y Ahorcado.
-                </p>
-                <p>
                     Inicialmente implementamos los juegos en PSeInt
                     para trabajar la lógica de programación.
                     Posteriormente, los trasladamos a Java,
                     aplicando estructuras de control, métodos
                     y conceptos de programación.
-                </p>
+                </p> 
+
+                <h3>Tecnologías Utilizadas</h3>
                 <ul>
-                    <li>PSeInt</li>
-                    <li>Java</li>
+                    <img src="https://skillicons.dev/icons?i=java,python,js,html,css,git,github" alt="Tecnologías" />
                 </ul>
-            </article>
+                <h3>IDE Utilizados</h3>
+                <ul>
+                    <img src="https://skillicons.dev/icons?i=vscode,pycharm,sublime,mysql" alt="Tecnologías" />
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEWklEQVR4nO2ZbWgbdQDGQwb7MFD8ImxVFGHanloU/CIMl5eF+cEJc7APrqOIJq0wREHmyMsWUdRQuoFixXIZ6KZuFJWat9W16u1cw5peYrpKs7Wdd7m0zdK75pLe/ZPeLulJtl4JMcmS9NJGyAPP1/D73d0DufsrFM0005ixuHSQ2alxwph++Gyg+znF/yXWQV2L2aHttzg1GYtTK9oxg2gf12dhTH+uH+vapWjUWB0Hdlhc2hNmhyaZA5d6V2C9egBjBtv5a+88qGiUWK1WpcWp6bQ4tAv54MUF7hUeN8zDfn3XwMDhbVsKb3bt05kd2mAx8HIC6x03TMH+t17dsoGWA69IAFu7I5s19MKByiVgr/fQSw1UVgGsDkO/30DL9UP3y7NXbl703oiO+r8JHAtVKwJvdOiVDLRYTzp1C+7rfegyu5wBAIi5shyb/Ssy5D3r7yarviPjNQ59+KnX/T1f7J+uHH4fM4B9iiSW4ykJvLDLbIIfxS+idqyLrlTga9/b+J5vL/iqFkB3dojozg7B8eJh9KPvdHQpcLNTw3/5Rzcai0foUuCFjbMU4wqdQWDMkC7zCDFv/tKLbO/x80rbhFirwFqPMBcOvYacHNTw6/AO7erpkQ4vuXiTrBS8sDGGnP958mMUxgyZvBEL5t8s6ENnvHQOXOoGBe4VeeQI3v/+K4HPLh/CpqPYVK3ghSXpqdnvg8cnekffHXu8b2Q6H1xWAamCIPgBALIJcBw3E41GfcXA6yKwllVBELwcx+G1grMsOxeLxVAcx7MEQYibLSDlDs/zKADgdhVXfImiKCQcDq/kwKVulYAUsLKyggAAEmXAOYZhEIIglvPBiQYRuJtsNhvPiXAcl84D5xOJBEqS5GIxcKKRBPJE5tLp9NVkMnk1EonMlQMnGlFASiXgRFOgSJoCa2kK2JoCHU0BolEErj32Bh7d84Fv6eAn/juTREgugZEbczMvXWZ9j/4Q82/ruS7/3+nRlqMM/sJ7CKUy8rTaJOZKqU2r8Y5er0AukrUKjM1E5g/+nkQhD8hAnpSYa6uLEx62R1ClbWLjLzR/7joqhJ49hlIqEy2BFzYnlejuQzNLLFWpwORsmOm8wiCQG6Ql8MI+6eSYB76aQZS2YG2vlMHdXWMxlXG6FPh/RDQmhrX9iGTTfKqUwCwe5k+NxdCn3YAuBQ4V9Imf4vj2038HqhagVWYdpTIFKxVYr9aywMG/omImk5EEbv2DZz8PxLztHkBWCg6ttc0Dplo9oLbvp6LCqqQ1pk5abVyoWmT/qVvpwbHg+cnb489fAqFqwSF3ar7NA7oUA+LGv2DPH7DuoNSmE5TKmKxWpIYrDiA3sO32iPKfIVC64y20ythPqUwZ+QVAts0DzrVd4up/ikPvtUC02uSUS6DNDYafGeI2/xytkqHXbaBy5X5Dr/tA5UqpoW/aQOs19E0fqFyJ77W0UyrjEORODbW62XbZfriZZhSy5l9FpN2rpTBFgwAAAABJRU5ErkJggg==" alt="apache-netbeans">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 130'%3E%3Cg stroke='%23333' stroke-width='1.5'%3E%3Cpath d='M25 12 L155 12 L145 53 L15 53 Z' fill='%23ffdf42'/%3E%3Cpath d='M35 65 L165 65 L155 106 L25 106 Z' fill='%23ffdf42'/%3E%3C/g%3E%3Cg fill='%23222222' font-family='Arial,sans-serif' font-size='27' font-weight='bold' text-anchor='middle'%3E%3Ctext x='85' y='42'%3EPSe%3C/text%3E%3Ctext x='95' y='95'%3EInt%3C/text%3E%3C/g%3E%3Cpath d='M72 48 L72 74 M64 66 L72 75 L80 66' fill='none' stroke='%23df3030' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M111 76 L133 53 M121 53 L133 53 L133 65' fill='none' stroke='%232777c5' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" alt="Logo de PSeInt" class="icono-pseint"/>
+                </ul>
+                </div>
+            </div>
+
         </section>
         <section id="estudios" class="estudios">
             <article class="container-estudios">
@@ -113,6 +124,198 @@
 
             </div>
         </section>
+
+        <section id="contacto" class="contacto">
+            <div class="container-contacto">
+                
+                <h2>Contacto</h2>
+
+                <div class="formulario-contacto">
+                    <div class="terminal-contacto">
+                        <div class="contact-header">
+                            
+                            <h3 class="contact-title">Nueva consulta</h3>
+                            <p class="contact-subtitle">Nos gustaría saber de ti. Por favor, completá el siguiente formulario.</p>
+                        </div>
+
+                        <!-- Reemplazar TU_ID por el ID del formulario de Formspree -->
+                        <form class="contact-form" action="https://formspree.io/f/TU_ID" method="POST">
+                            <!--Campo trampa anti-spam de Formspree: no lo completes nunca-->
+                            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+
+                            <div class="form-grup">
+                                <label for="contacto-nombre">Nombre</label>
+                                <input id="contacto-nombre" name="nombre" type="text" placeholder="Nombre" autocomplete="given-name" required>
+                            </div>
+
+                            <div class="form-grup">
+                                <label for="contacto-apellido">Apellido</label>
+                                <input id="contacto-apellido" name="apellido" type="text" placeholder="Apellido" autocomplete="family-name" required>
+                            </div>
+
+                            <div class="form-grup">
+                                <label for="contacto-email">Correo electrónico</label>
+                                <input id="contacto-email" name="email" type="email" placeholder="ejemplo.123@gmail.com" autocomplete="email" required>
+                            </div>
+
+                            <div class="form-grup">
+                                <label for="contacto-telefono">Teléfono</label>
+                                <input id="contacto-telefono" name="telefono" type="tel" placeholder="+54 9 123 456-7890" autocomplete="tel" required>
+                            </div>
+
+                            <div class="form-grup span-all">
+                                <label for="contacto-mensaje">Mensaje</label>
+                                <textarea id="contacto-mensaje" name="mensaje" placeholder="Escribí tu mensaje..." required></textarea>
+                            </div>
+
+                            <div class="form-terms span-all">
+                                <input id="contacto-terminos" name="terminos" type="checkbox" required>
+                                <label for="contacto-terminos">Acepto los términos y condiciones de uso</label>
+                            </div>
+
+                            <!--Desplegable de términos y condiciones queda abierto mientras el usuario no acepta, y se oculta al aceptar.-->
+                            <details class="terminos-desplegable span-all" open>
+                                <summary class="enlace-terminos">Leer términos y condiciones</summary>
+                                <div class="contenido-terminos">
+                                    <h4>Términos y Condiciones de Uso</h4>
+                                    <p>
+                                        Los datos personales proporcionados en este formulario serán utilizados exclusivamente para responder a tus consultas de contacto. No serán compartidos ni transferidos a terceros.
+                                    </p>
+                                </div>
+                            </details>
+
+                            <button class="submit-btn span-all" type="submit">Enviar</button>
+
+                            <p class="form-aviso span-all" role="note">
+                                <strong>Aviso:</strong> si el formulario no se envía, puede ser un problema de conexión con el servidor. Revisá tu conexión a internet e intentá nuevamente.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="nosotros">
+            <h2>Integrantes del Grupo</h2>
+            <!-- Cada uno debe de Reemplazar en su nombre segun corresponda con una descripción y el link a su Git Hub y si quien agregar mas redes es decicion de cada uno -->
+            <div class="galeria-nosotros">
+
+                <article class="integrante">
+                    <h3>Bruno Sosa</h3>
+                    <p>Descripción personal.</p>
+                    <!--Reemplazar https://github.com/tu-usuario con el link de tu perfil-->
+                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Bruno Sosa" title="GitHub de Bruno Sosa">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                        </svg>
+                    </a>
+                </article>
+
+                <article class="integrante">
+                    <h3>Cristian Vidal</h3>
+                    <p>Descripción personal.</p>
+                    <!--Reemplazar https://github.com/tu-usuario con el link de tu perfil-->
+                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Cristian Vidal" title="GitHub de Cristian Vidal">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                        </svg>
+                    </a>
+                </article>
+
+                <article class="integrante">
+                    <h3>Emanuel Nuñez</h3>
+                    <p>Descripción personal.</p>
+                    <!--Reemplazar https://github.com/tu-usuario con el link de tu perfil-->
+                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Emanuel Nuñez" title="GitHub de Emanuel Nuñez">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                        </svg>
+                    </a>
+                </article>
+
+                <article class="integrante">
+                    <h3>Gustavo Alaniz</h3>
+                    <p>Descripción personal.</p>
+
+                        <!--Reemplazar https://github.com/tu-usuario con el link de tu perfil-->
+                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Gustavo Alaniz" title="GitHub de Gustavo Alaniz">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                        </svg>
+                    </a>
+                </article>
+
+                <article class="integrante">
+                    <h3>Jesus D. Perez</h3>
+                    <p>¡Holaa!, me presento, soy Jesus D. Perez estudiante de la <strong>Tecnicatura en Programación</strong>, en la UTN San Rafael, soy novato en todo esto, pero me gusta investigar,
+                            probar y tratar de solucionar el problema, entendiendo en el proceso, me llama la atención la ciberseguridad, es por ello que estoy estudiando a la vez que la TUP, la <strong>Diplomatura en Ciberseguridad</strong>, también en la UTN San Rafael. 
+                            Me gusta quemarme la cabeza descifrando sistemas operativos como Linux. Fan de las computadoras como asi tambien gamer de corazon.</p>
+                    <!--Reemplazar https://github.com/tu-usuario con el link de tu perfil-->
+                    <a href="https://github.com/Gsus0001" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Jesus Perez" title="GitHub de Jesus Perez">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                        </svg>
+                    </a>
+                </article>
+
+                <article class="integrante">
+                    <h3>Juan Sosa</h3>
+                    <p>Descripción personal.</p>
+                    <!--Reemplazar https://github.com/tu-usuario con el link de tu perfil-->
+                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Juan Sosa" title="GitHub de Juan Sosa">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                        </svg>
+                    </a>
+                </article>
+                              
+                <article class="integrante">
+                    <h3>Luciano Morcillo</h3>
+                    <p>Descripción personal.</p>
+                    <!--Reemplazar https://github.com/tu-usuario con el link de tu perfil-->
+                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Luciano Morcillo" title="GitHub de Luciano Morcillo">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                        </svg>
+                    </a>
+                </article>
+                
+
+                <article class="integrante">
+                    <h3>Matias Lopez</h3>
+                    <p>Descripción personal.</p>
+                    <!--Reemplazar https://github.com/tu-usuario con el link de tu perfil-->
+                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Matias Lopez" title="GitHub de Matias Lopez">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                        </svg>
+                    </a>
+                </article>
+                
+                <article class="integrante">
+                    <h3>Michael Súarez</h3>
+                    <p>Descripción personal.</p>
+                    <!--Reemplazar https://github.com/tu-usuario con el link de tu perfil-->
+                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Michael Súarez" title="GitHub de Michael Súarez">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                        </svg>
+                    </a>
+                </article>
+                
+                <article class="integrante">
+                    <h3>Rodrigo Sanchez</h3>
+                    <p>Descripción personal.</p>
+                    <!--Reemplazar https://github.com/tu-usuario con el link de tu perfil-->
+                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Rodrigo Sanchez" title="GitHub de Rodrigo Sanchez">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                        </svg>
+                    </a>
+                </article>
+            </div>
+        </section>
+
     </main>
 </body>
 </html>
