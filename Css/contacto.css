@@ -1,0 +1,221 @@
+/* Variables propias del apartado de contacto */
+.contacto{
+    --contacto-acento: #8FB573;
+    --contacto-foco: rgba(143, 181, 115, 0.35);
+    --contacto-borde: rgba(255, 255, 255, 0.15);
+    --contacto-error: #e5534b;
+    --contacto-exito: #4caf50;
+}
+
+.contacto .formulario-contacto{
+    display: block;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/*Box General del Formulario*/
+.terminal-contacto{
+    width: min(100%, 760px);
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid var(--contacto-borde);
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.terminal-titulo{
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+}
+
+/*Encabezado del formulario*/
+.terminal-contacto .contact-header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1.25rem 1.5rem 0.25rem;
+}
+.terminal-contacto .logo{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    width: 56px;
+    height: auto;
+    padding: 3px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+.terminal-contacto .contact-title{
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.terminal-contacto .contact-subtitle{
+    max-width: 85%;
+    margin: 0;
+    font-size: 0.82rem;
+    
+}
+
+/*Grilla del formulario*/
+.terminal-contacto .contact-form{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.25rem;
+    row-gap: 1rem;
+    padding: 1.25rem 1.5rem 1.5rem;
+}
+.span-all{
+    grid-column: 1 / -1;
+}
+
+/*Cada campo*/
+.form-grup{
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+.form-grup label{
+    display: flex;
+    gap: 2px;
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+}
+.form-grup label::before{
+opacity: 0.55;
+}
+.form-grup:has([required]) label::after{
+    content: "*";
+    color: #f44336;
+    font-size: 0.75rem;
+}
+
+/*Campos de texto y área de mensaje*/
+.form-grup :is(input, textarea){
+    width: 90%;
+    padding: 0.65rem 0.75rem;
+    font-size: 0.85rem;
+    border: 1px solid var(--contacto-borde);
+    border-radius: 6px;
+}
+
+.form-grup :is(input, textarea):focus{
+    outline: none;
+    box-shadow: 0 0 0 3px var(--contacto-foco);
+}
+
+.form-grup textarea{
+    min-height: 120px;
+    resize: vertical;
+    scrollbar-width: thin;
+    scrollbar-color: var(--texto-suave) transparent;
+}
+
+/*Términos y condiciones*/
+.form-terms{
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+    font-size: 0.78rem;
+    
+}
+.form-terms input{
+    margin-top: 0.2rem;
+    
+}
+.form-terms label{
+    cursor: pointer;
+}
+.enlace-terminos{
+    cursor: pointer;
+    color: var(--contacto-acento);
+    text-decoration: underline dotted;
+}
+.enlace-terminos:hover{
+    text-decoration: underline;
+}
+.contenido-terminos{
+    margin-top: 0.5rem;
+    padding: 0.75rem 0.85rem;
+    border: 1px solid var(--contacto-borde);
+    border-radius: 6px;
+    line-height: 1.5;
+}
+.contenido-terminos h4{
+    margin: 0 0 0.4rem;
+}
+.contenido-terminos p{
+    margin: 0;
+}
+
+/*Botón de envío*/
+.submit-btn{
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid var(--contacto-borde);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    box-shadow: 0 0 18px var(--contacto-foco);
+}
+.submit-btn:active{
+    transform: translateY(1px);
+}
+.submit-btn:focus-visible{
+    outline: 2px solid var(--contacto-acento);
+    outline-offset: 3px;
+}
+
+/*Términos y condiciones: al aceptar la casilla se oculta el desplegable*/
+.contact-form:has(#contacto-terminos:checked) .terminos-desplegable{
+    display: none;
+}
+
+/*Cartel de aviso sobre la conexión con el servidor*/
+.form-aviso{
+    margin: 0;
+    padding: 0.65rem 0.85rem;
+    font-size: 0.78rem;
+    line-height: 1.4;
+    color: #ffe1a8;
+    background-color: rgba(255, 193, 7, 0.12);
+    border: 1px solid rgba(255, 193, 7, 0.45);
+    border-radius: 6px;
+}
+.form-aviso strong{
+    color: #ffd166;
+}
+
+@keyframes fade-in-out{
+    0%{ opacity: 1; }
+    80%{ opacity: 1; }
+    100%{ opacity: 0; }
+}
+
+/* Celulares (Pantallas pequeñas, hasta 767px)*/
+@media (max-width: 767px){
+    .terminal-contacto .contact-header{
+        padding: 1rem 1rem 0.25rem;
+    }
+    .terminal-contacto .logo{
+        top: 0.9rem;
+        right: 1rem;
+        width: 44px;
+    }
+    .terminal-contacto .contact-subtitle{
+        max-width: 75%;
+    }
+    .terminal-contacto .contact-form{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    .span-all{
+        grid-column: auto;
+    }
+}
