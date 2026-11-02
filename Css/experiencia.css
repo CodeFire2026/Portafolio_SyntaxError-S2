@@ -1,3 +1,62 @@
+.experiencia{   
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: var(--texto-suave);
+}
+.container-experiencia{
+    width: 100%;
+    padding: 2rem;
+    margin: 5rem auto;
+    line-height: 1.6;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: var(--superficie);
+    border: 1px solid var(--superficie-borde);
+    box-shadow: 0 2px 8px var(--sombra);
+}
+.contain-experiencia h2{
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.containe-experiencia .comando{
+    text-align: left;
+}
+/*Contenedor general que engloba a los proyectos*/
+.galeria-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    justify-content:flex-start;
+}
+/*Contenedor del proyecto general*/
+.proyecto{
+    background-color: var(--superficie);
+    border: 1px solid var(--superficie-borde);
+    border-radius: 5px;
+    padding: 15px;
+    width: calc(33.33% - 1rem);
+    box-shadow: 0 2px 5px var(--sombra);
+    text-align: center;
+}
+.proyecto h3{
+    text-align: center;
+}
+
+/* Logo de PSeInt con recuadro negro para que quede igual que los demás íconos */
+.icono-pseint{
+    height: 48px;
+    width: auto;
+    padding: 0 0.5rem;
+    background-color: #00000025;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+/*
 .experencia{
     display: flex;
     justify-content: center;
@@ -13,11 +72,11 @@
     font-size:large;
     margin: 5rem;
 }
-
+*/
 /* Celular (Pantallas pequeñas, hasta 767px) */
 @media (max-width: 767px){
     .experiencia{
-        width: 50%;
+        width: 100%;
         padding: 1rem;
         margin-top: 1rem;
         font-size: small;
@@ -27,13 +86,13 @@
 /* Tablet (Pantallas medianas entre 768px y 1023px) */
 @media (min-width: 768px) and (max-width: 1023px){
     .experiencia{
-        width: 75%;
+        width: 100%;
     }
 }
 
 /* Escritorio (Pantallas anchas, 1024px en adelante) */
 @media (min-width: 1024px){
     .experiencia{
-        width: 50%;
+        width: 100%;
     }
 }
