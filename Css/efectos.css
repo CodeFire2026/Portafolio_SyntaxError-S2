@@ -271,3 +271,42 @@ html.cambiando-tema *, html.cambiando-tema *::before, html.cambiando-tema *::aft
     .reveal { opacity: 1; transform: none; }
     html { scroll-behavior: auto; }
 }
+/* Banner como fondo del header (queda fijo la franja con el menú) */
+header {
+    position: sticky;
+    top: -240px;                /* oculta 240px al bajar: quedan visibles 100px */
+    height: 340px;              /* alto total del banner */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* título arriba, pestañas abajo */
+    padding: 2rem 0 1.25rem;
+    box-sizing: border-box;
+    background: url("../Assets/banner.webp") center / cover no-repeat !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+header .titulo { margin: auto 0; }   /* centra el nombre en el espacio entre el borde de arriba y las pestañas */
+header .navigation { margin-bottom: 0; }
+header .navigation a,
+header .navigation a.activo,
+header .navigation a:hover { color: #e6edf7 !important; }
+
+html { scroll-padding-top: 110px; }   /* para que los anclajes no queden tapados */
+
+@media (max-width: 767px) {
+    header {
+        position: relative;     /* en celular el menú es vertical y muy alto: no se fija */
+        top: auto;
+        height: auto;
+        min-height: 0;
+    }
+}
+
+/* Avatar con foto */
+.avatar-iniciales.con-foto { background: none; padding: 0; overflow: hidden; }
+.avatar-iniciales.con-foto img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: none !important;
+}
