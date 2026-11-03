@@ -109,4 +109,32 @@ document.addEventListener("DOMContentLoaded", () => {
         av.textContent = iniciales;
         card.insertBefore(av, nombre);
     });
+
+    /* 6. Foto de Rodrigo Sanchez (reemplaza solo sus iniciales) */
+    document.querySelectorAll(".integrante").forEach((card) => {
+        const h3 = card.querySelector("h3");
+        if (!h3 || h3.textContent.trim() !== "Rodrigo Sanchez") return;
+        const av = card.querySelector(".avatar-iniciales");
+        if (!av) return;
+        const img = document.createElement("img");
+        img.src = "./Assets/rodrigo.jpg";
+        img.alt = "Foto de Rodrigo Sanchez";
+        av.textContent = "";
+        av.classList.add("con-foto");
+        av.appendChild(img);
+    });
+    /* 7. Foto de Matias Lopez (reemplaza solo sus iniciales) */
+    document.querySelectorAll(".integrante").forEach((card) => {
+        const h3 = card.querySelector("h3");
+        if (!h3 || h3.textContent.trim() !== "Matias Lopez") return;
+        const av = card.querySelector(".avatar-iniciales");
+        if (!av) return;
+        const img = document.createElement("img");
+        img.src = "./Assets/matias.jpg";
+        img.alt = "Foto de Matias Lopez";
+        av.textContent = "";
+        av.classList.add("con-foto");
+        av.appendChild(img);
+    });
+
 });
