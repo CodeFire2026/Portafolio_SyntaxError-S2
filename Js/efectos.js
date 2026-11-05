@@ -150,4 +150,17 @@ document.addEventListener("DOMContentLoaded", () => {
         av.appendChild(img);
     });
 
+    /* 9. Foto de Emanuel Nuñez (reemplaza solo sus iniciales) */
+    document.querySelectorAll(".integrante").forEach((card) => {
+        const h3 = card.querySelector("h3");
+        if (!h3 || h3.textContent.trim() !== "Emanuel Nuñez") return;
+        const av = card.querySelector(".avatar-iniciales");
+        if (!av) return;
+        const img = document.createElement("img");
+        img.src = "./Assets/emanuel.jpg";
+        img.alt = "Foto de Emanuel Nuñez";
+        av.textContent = "";
+        av.classList.add("con-foto");
+        av.appendChild(img);
+    });
 });
