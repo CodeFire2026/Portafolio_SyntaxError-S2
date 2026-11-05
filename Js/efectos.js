@@ -149,5 +149,17 @@ document.addEventListener("DOMContentLoaded", () => {
         av.classList.add("con-foto");
         av.appendChild(img);
     });
+    document.querySelectorAll(".integrante").forEach((card) => {
+        const h3 = card.querySelector("h3");
+        if (!h3 || h3.textContent.trim() !== "Cristian Vidal") return;
+        const av = card.querySelector(".avatar-iniciales");
+        if (!av) return;
+        const img = document.createElement("img");
+        img.src = "./Assets/cristian.jpg";
+        img.alt = "Foto de Cristian Vidal";
+        av.textContent = "";
+        av.classList.add("con-foto");
+        av.appendChild(img);
+    });
 
 });

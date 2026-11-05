@@ -7,7 +7,9 @@
     margin: 5rem auto;
     box-sizing: border-box ;
 }
-
+.container-estudios-section {
+    padding: 2rem;
+}
 .logo-utn{
     display: flex;
     border-radius: 50%; /* Hace que la imagen sea circular */
