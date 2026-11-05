@@ -136,5 +136,18 @@ document.addEventListener("DOMContentLoaded", () => {
         av.classList.add("con-foto");
         av.appendChild(img);
     });
+    /* 8. Foto de Gustavo Alaniz (reemplaza solo sus iniciales) */
+    document.querySelectorAll(".integrante").forEach((card) => {
+        const h3 = card.querySelector("h3");
+        if (!h3 || h3.textContent.trim() !== "Gustavo Alaniz") return;
+        const av = card.querySelector(".avatar-iniciales");
+        if (!av) return;
+        const img = document.createElement("img");
+        img.src = "./Assets/gustavo.jpg";
+        img.alt = "Foto de Gustavo Alaniz";
+        av.textContent = "";
+        av.classList.add("con-foto");
+        av.appendChild(img);
+    });
 
 });
