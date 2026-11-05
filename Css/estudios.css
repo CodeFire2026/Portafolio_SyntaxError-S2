@@ -23,7 +23,15 @@
         margin-top: 1rem;
         font-size: small;
     }
+    .container-estudios-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 200%;
+    }
 }
+
 
 /* Tablet (Pantallas medianas entre 768px y 1023px) */
 @media (min-width: 768px) and (max-width: 1023px){
