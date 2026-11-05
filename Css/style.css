@@ -68,7 +68,8 @@ a{
 .foto-utn {
     display: flex;
     align-self: center;    /* Centra verticalmente la imagen */
-    width: 100px;           /* Define el ancho deseado */
+    width: 200px;           /* Define el ancho deseado */
+    max-width: 100%;        /* Evita que se desborde en pantallas chicas */
     height: auto;           /* Mantiene la proporción original */
     border-radius: 50px;     /* Redondea las esquinas (o usa 50% si es un círculo perfecto) */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
