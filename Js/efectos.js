@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const av = card.querySelector(".avatar-iniciales");
         if (!av) return;
         const img = document.createElement("img");
-        img.src = "./Assets/bruno.sosa.jpg";
+        img.src = "./Assets/bruno.sosa.jpeg";
         img.alt = "Foto de Bruno Sosa";
         av.textContent = "";
         av.classList.add("con-foto");
