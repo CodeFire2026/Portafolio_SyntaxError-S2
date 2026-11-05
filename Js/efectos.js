@@ -187,4 +187,5 @@ document.addEventListener("DOMContentLoaded", () => {
         av.textContent = "";
         av.classList.add("con-foto");
         av.appendChild(img);
+    });
 });
