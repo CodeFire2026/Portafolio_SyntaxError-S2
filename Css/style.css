@@ -65,6 +65,20 @@ a{
     flex-direction: column;
 }
 
+.foto-utn {
+    display: flex;
+    align-self: center;    /* Centra verticalmente la imagen */
+    width: 100px;           /* Define el ancho deseado */
+    height: auto;           /* Mantiene la proporción original */
+    border-radius: 50px;     /* Redondea las esquinas (o usa 50% si es un círculo perfecto) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+    transition: transform 0.3s ease; /* Efecto suave para animaciones */
+}
+
+/* Opcional: un efecto al pasar el cursor por encima */
+.foto-utn:hover {
+    transform: scale(1.05); /* Agranda ligeramente la imagen */
+}
 
 /* Celular (Pantallas pequeñas, hasta 767px) */
 @media (max-width: 767px){
