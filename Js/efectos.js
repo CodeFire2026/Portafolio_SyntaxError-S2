@@ -175,4 +175,17 @@ document.addEventListener("DOMContentLoaded", () => {
         av.classList.add("con-foto");
         av.appendChild(img);
     });
+    /* 10. foto de bruno sosa */
+    document.querySelectorAll(".integrante").forEach((card) => {
+        const h3 = card.querySelector("h3");
+        if (!h3 || h3.textContent.trim() !== "Bruno Sosa") return;
+        const av = card.querySelector(".avatar-iniciales");
+        if (!av) return;
+        const img = document.createElement("img");
+        img.src = "./Assets/brunoSosa.jpeg";
+        img.alt = "Foto de Bruno Sosa";
+        av.textContent = "";
+        av.classList.add("con-foto");
+        av.appendChild(img);
+    });
 });
