@@ -133,4 +133,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ponerFotoIntegrante("Emanuel Nuñez", "./Assets/emanuel.jpg");
     ponerFotoIntegrante("Bruno Sosa", "./Assets/brunoSosa.jpeg");
     ponerFotoIntegrante("Jesus D. Perez", "./Assets/jesus.jpeg");
+    ponerFotoIntegrante("Juan Sosa", "./Assets/juan.jpg");
+    ponerFotoIntegrante("Luciano Morcillo", "./Assets/LucianoMorcillo.jpeg");
 });
