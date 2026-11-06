@@ -200,6 +200,19 @@ document.addEventListener("DOMContentLoaded", () => {
         av.classList.add("con-foto");
         av.appendChild(img);
     });
+        /* 11. Foto de Juan Sosa (reemplaza solo sus iniciales) */
+    document.querySelectorAll(".integrante").forEach((card) => {
+        const h3 = card.querySelector("h3");
+        if (!h3 || h3.textContent.trim() !== "Juan Sosa") return;
+        const av = card.querySelector(".avatar-iniciales");
+        if (!av) return;
+        const img = document.createElement("img");
+        img.src = "./Assets/juan.jpg";
+        img.alt = "Foto de Juan Sosa";
+        av.textContent = "";
+        av.classList.add("con-foto");
+        av.appendChild(img);
+    });
     /* Foto de Luciano Morcillo */
     document.querySelectorAll(".integrante").forEach((card) => {
         const nombre = card.querySelector("h3");
