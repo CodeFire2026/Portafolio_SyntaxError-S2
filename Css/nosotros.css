@@ -28,9 +28,8 @@
     width: 100%;
 }
 
-/* Caja cuadrada de cada integrante */
+/* Cada tarjeta crece para mostrar la descripción completa */
 .integrante{
-    aspect-ratio: 1 / 1.1; /* mantiene la caja rectangular */
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -61,7 +60,7 @@
     margin: 0;
     font-size: 0.9rem;
     line-height: 1.4;
-    overflow-y: auto;
+    overflow-wrap: anywhere;
 }
 
 .integrante a{
