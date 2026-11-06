@@ -110,120 +110,29 @@ document.addEventListener("DOMContentLoaded", () => {
         card.insertBefore(av, nombre);
     });
 
-    /* 6. Foto de Rodrigo Sanchez (reemplaza solo sus iniciales) */
-    document.querySelectorAll(".integrante").forEach((card) => {
-        const h3 = card.querySelector("h3");
-        if (!h3 || h3.textContent.trim() !== "Rodrigo Sanchez") return;
-        const av = card.querySelector(".avatar-iniciales");
-        if (!av) return;
-        const img = document.createElement("img");
-        img.src = "./Assets/rodrigo.jpg";
-        img.alt = "Foto de Rodrigo Sanchez";
-        av.textContent = "";
-        av.classList.add("con-foto");
-        av.appendChild(img);
-    });
-    /* 7. Foto de Matias Lopez (reemplaza solo sus iniciales) */
-    document.querySelectorAll(".integrante").forEach((card) => {
-        const h3 = card.querySelector("h3");
-        if (!h3 || h3.textContent.trim() !== "Matias Lopez") return;
-        const av = card.querySelector(".avatar-iniciales");
-        if (!av) return;
-        const img = document.createElement("img");
-        img.src = "./Assets/matias.jpg";
-        img.alt = "Foto de Matias Lopez";
-        av.textContent = "";
-        av.classList.add("con-foto");
-        av.appendChild(img);
-    });
-    /* 8. Foto de Gustavo Alaniz (reemplaza solo sus iniciales) */
-    document.querySelectorAll(".integrante").forEach((card) => {
-        const h3 = card.querySelector("h3");
-        if (!h3 || h3.textContent.trim() !== "Gustavo Alaniz") return;
-        const av = card.querySelector(".avatar-iniciales");
-        if (!av) return;
-        const img = document.createElement("img");
-        img.src = "./Assets/gustavo.jpg";
-        img.alt = "Foto de Gustavo Alaniz";
-        av.textContent = "";
-        av.classList.add("con-foto");
-        av.appendChild(img);
-    });
-    document.querySelectorAll(".integrante").forEach((card) => {
-        const h3 = card.querySelector("h3");
-        if (!h3 || h3.textContent.trim() !== "Cristian Vidal") return;
-        const av = card.querySelector(".avatar-iniciales");
-        if (!av) return;
-        const img = document.createElement("img");
-        img.src = "./Assets/cristian.jpg";
-        img.alt = "Foto de Cristian Vidal";
-        av.textContent = "";
-        av.classList.add("con-foto");
-        av.appendChild(img);
-    });
+    /* 6. Reemplaza las iniciales por la foto del integrante */
+    function ponerFotoIntegrante(nombre, src) {
+        document.querySelectorAll(".integrante").forEach((card) => {
+            const h3 = card.querySelector("h3");
+            if (!h3 || h3.textContent.trim() !== nombre) return;
+            const av = card.querySelector(".avatar-iniciales");
+            if (!av) return;
+            const img = document.createElement("img");
+            img.src = src;
+            img.alt = `Foto de ${nombre}`;
+            av.textContent = "";
+            av.classList.add("con-foto");
+            av.appendChild(img);
+        });
+    }
 
-    /* 9. Foto de Emanuel Nuñez (reemplaza solo sus iniciales) */
-    document.querySelectorAll(".integrante").forEach((card) => {
-        const h3 = card.querySelector("h3");
-        if (!h3 || h3.textContent.trim() !== "Emanuel Nuñez") return;
-        const av = card.querySelector(".avatar-iniciales");
-        if (!av) return;
-        const img = document.createElement("img");
-        img.src = "./Assets/emanuel.jpg";
-        img.alt = "Foto de Emanuel Nuñez";
-        av.textContent = "";
-        av.classList.add("con-foto");
-        av.appendChild(img);
-    });
-    /* 10. foto de bruno sosa */
-    document.querySelectorAll(".integrante").forEach((card) => {
-        const h3 = card.querySelector("h3");
-        if (!h3 || h3.textContent.trim() !== "Bruno Sosa") return;
-        const av = card.querySelector(".avatar-iniciales");
-        if (!av) return;
-        const img = document.createElement("img");
-        img.src = "./Assets/brunoSosa.jpeg";
-        img.alt = "Foto de Bruno Sosa";
-        av.textContent = "";
-        av.classList.add("con-foto");
-        av.appendChild(img);
-    });
-    document.querySelectorAll(".integrante").forEach((card) => {
-        const h3 = card.querySelector("h3");
-        if (!h3 || h3.textContent.trim() !== "Jesus D. Perez") return;
-        const av = card.querySelector(".avatar-iniciales");
-        if (!av) return;
-        const img = document.createElement("img");
-        img.src = "./Assets/jesus.jpeg";
-        img.alt = "Foto de Jesus D. Perez";
-        av.textContent = "";
-        av.classList.add("con-foto");
-        av.appendChild(img);
-    });
-        /* 11. Foto de Juan Sosa (reemplaza solo sus iniciales) */
-    document.querySelectorAll(".integrante").forEach((card) => {
-        const h3 = card.querySelector("h3");
-        if (!h3 || h3.textContent.trim() !== "Juan Sosa") return;
-        const av = card.querySelector(".avatar-iniciales");
-        if (!av) return;
-        const img = document.createElement("img");
-        img.src = "./Assets/juan.jpg";
-        img.alt = "Foto de Juan Sosa";
-        av.textContent = "";
-        av.classList.add("con-foto");
-        av.appendChild(img);
-    });
-    /* Foto de Luciano Morcillo */
-    document.querySelectorAll(".integrante").forEach((card) => {
-        const nombre = card.querySelector("h3");
-        if (!nombre || nombre.textContent.trim() !== "Luciano Morcillo") return;
-        const avatar = card.querySelector(".avatar-iniciales");
-        if (!avatar) return;
-        const imagen = document.createElement("img");
-        imagen.src = "./Assets/LucianoMorcillo.jpeg";
-        imagen.alt = "Foto de Luciano Morcillo";
-        avatar.textContent = "";
-        avatar.classList.add("con-foto");
-        avatar.appendChild(imagen);
-    });
+    ponerFotoIntegrante("Rodrigo Sanchez", "./Assets/rodrigo.jpg");
+    ponerFotoIntegrante("Matias Lopez", "./Assets/matias.jpg");
+    ponerFotoIntegrante("Gustavo Alaniz", "./Assets/gustavo.jpg");
+    ponerFotoIntegrante("Cristian Vidal", "./Assets/cristian.jpg");
+    ponerFotoIntegrante("Emanuel Nuñez", "./Assets/emanuel.jpg");
+    ponerFotoIntegrante("Bruno Sosa", "./Assets/brunoSosa.jpeg");
+    ponerFotoIntegrante("Jesus D. Perez", "./Assets/jesus.jpeg");
+    ponerFotoIntegrante("Juan Sosa", "./Assets/juan.jpg");
+    ponerFotoIntegrante("Luciano Morcillo", "./Assets/LucianoMorcillo.jpeg");
 });
