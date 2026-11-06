@@ -200,4 +200,17 @@ document.addEventListener("DOMContentLoaded", () => {
         av.classList.add("con-foto");
         av.appendChild(img);
     });
+    /* Foto de Luciano Morcillo */
+    document.querySelectorAll(".integrante").forEach((card) => {
+        const nombre = card.querySelector("h3");
+        if (!nombre || nombre.textContent.trim() !== "Luciano Morcillo") return;
+        const avatar = card.querySelector(".avatar-iniciales");
+        if (!avatar) return;
+        const imagen = document.createElement("img");
+        imagen.src = "./Assets/LucianoMorcillo.jpeg";
+        imagen.alt = "Foto de Luciano Morcillo";
+        avatar.textContent = "";
+        avatar.classList.add("con-foto");
+        avatar.appendChild(imagen);
+    });
 });
