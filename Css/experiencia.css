@@ -56,6 +56,22 @@
     box-sizing: border-box;
 }
 
+/* ---------- Modo claro ----------
+   En oscuro la sección mantiene el panel original; en claro se integra con
+   las tarjetas translúcidas y el fondo del resto del sitio. */
+:root[data-tema="claro"] #experiencia .container-experiencia {
+    background: linear-gradient(160deg, rgba(8, 145, 178, 0.08), rgba(124, 58, 237, 0.08));
+    border-color: var(--borde);
+    box-shadow: 0 10px 30px var(--sombra);
+}
+
+/* Más contraste de la tarjeta interna sobre el panel claro */
+:root[data-tema="claro"] #experiencia .container-experiencia .proyectos {
+    background-color: rgba(255, 255, 255, 0.82) !important;
+    border-color: rgba(8, 145, 178, 0.18) !important;
+    box-shadow: 0 8px 22px rgba(30, 41, 90, 0.10);
+}
+
 /*
 .experencia{
     display: flex;
