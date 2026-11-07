@@ -1,6 +1,6 @@
 const CONFIG = {
     // Endpoint del servicio de formularios
-    endpoint: 'https://formspree.io/f/xgaogddr',
+    endpoint: 'https://formspree.io/f/mnppyjed',
 
     // Tiempo máximo de espera de la respuesta (ms)
     tiempoLimite: 15000,
