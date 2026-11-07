@@ -5,6 +5,7 @@
     padding: 1rem;
     margin: 5rem auto;
     background: var(--fondo-proyectos);
+    border-radius: var(--radio);
     box-sizing: border-box;
 }
 
@@ -19,8 +20,10 @@
 /* Tarjetas de cada proyecto */
 .proyecto {
     background-color: rgb(53, 52, 52);
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    box-shadow: 0 10px 30px var(--sombra);
+    
     padding: 15px;
     width: calc(33% - 40px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -73,6 +76,37 @@
     font-size: 1rem;
     line-height: 1.6;
     font-weight: normal;
+}
+
+/* ---------- Modo claro ----------
+   En oscuro la sección mantiene el panel original; en claro se integra con
+   las tarjetas translúcidas y el fondo del resto del sitio. */
+:root[data-tema="claro"] #proyectos {
+    background: linear-gradient(160deg, rgba(8, 145, 178, 0.08), rgba(124, 58, 237, 0.08));
+    border: 1px solid var(--borde);
+    box-shadow: 0 10px 30px var(--sombra);
+}
+
+/* Más contraste de las tarjetas sobre el panel claro */
+:root[data-tema="claro"] #proyectos .proyecto {
+    background-color: rgba(255, 255, 255, 0.82) !important;
+    border-color: rgba(8, 145, 178, 0.18) !important;
+    box-shadow: 0 8px 22px rgba(30, 41, 90, 0.10);
+}
+
+:root[data-tema="claro"] #proyectos .proyecto:hover {
+    border-color: rgba(8, 145, 178, 0.45) !important;
+    box-shadow: 0 18px 45px rgba(8, 145, 178, 0.18);
+}
+
+/* Recuadro "De PSeInt a Java" (por si se usa en el futuro) */
+:root[data-tema="claro"] .proceso-proyecto {
+    background-color: #ffffff;
+    border-color: rgba(8, 145, 178, 0.30);
+}
+
+:root[data-tema="claro"] .proceso-proyecto h3 {
+    color: #0e7490;
 }
 
 /* Celulares */
